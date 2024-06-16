@@ -1,0 +1,93 @@
+﻿<Window x:Class="PredDeplomohka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PredDeplomohka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Background="#FFFFDEA6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+        <Image Margin="-454,-226,-35,-68" Grid.RowSpan="2" Source="C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\wpid-Photo-Jan-24-2013-1128-AM.png" Stretch="Fill"/>
+        <TextBox x:Name="Login" Height="30" Margin="340,11,340,220" Background="#FFFFFFC8" CaretBrush="Black" BorderBrush="Black" Grid.Row="1" TextChanged="Login_TextChanged">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border Background="{TemplateBinding Background}"
+                                CornerRadius="5"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                                    <ScrollViewer x:Name="PART_ContentHost"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <PasswordBox x:Name="Pas" Height="30" Margin="340,47,340,184" Grid.Row="1" Background="#FFFFFFC8" BorderBrush="Black">
+            <PasswordBox.Style>
+                <Style TargetType="{x:Type PasswordBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type PasswordBox}">
+                                <Border Background="{TemplateBinding Background}"
+                                CornerRadius="5" 
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                                    <ScrollViewer x:Name="PART_ContentHost" Margin="-1,1,1,-1"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>               
+            </PasswordBox.Style>
+            </PasswordBox>
+            <Button Content="ВХОД" Margin="349,87,349,155" Grid.Row="1" Background="#FFFFFFC8" FontFamily="Bahnschrift" Click="Button_Click" Cursor="Hand" Foreground="Black" BorderBrush="Black">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                    CornerRadius="5"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    BorderBrush="{TemplateBinding BorderBrush}">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center" OpacityMask="White"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="714,10,0,0" VerticalAlignment="Top" Height="41" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_1">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+            CornerRadius="5"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                          VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Информация" HorizontalAlignment="Left" Margin="632,10,0,0" VerticalAlignment="Top" Height="41" Width="82" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Height="13" Margin="0,251,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontFamily="Bahnschrift" FontSize="9"><Run Text="© 2024 Создал Урожай Илья Александрович, ученик ГАПОУ НГГТК"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="25" Margin="0,154,0,0" TextWrapping="Wrap" Text="Твой Еженедельник Дел" VerticalAlignment="Top" Width="258" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="18"/>
+    </Grid>
+</Window>

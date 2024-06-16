@@ -1,0 +1,80 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PredDeplomohka"
+        xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="PredDeplomohka.Web"
+        mc:Ignorable="d"
+        Title="Web" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <DockPanel/>
+        <Image Source="C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\Bloknot.png" Stretch="Fill" Cursor="" Margin="-4,0,0,-181"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="-17,22,0,0" VerticalAlignment="Top" Height="46" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_1">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="697,22,0,0" VerticalAlignment="Top" Height="46" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <wpf:WebView2 Name="WebViewControl" Margin="10,49,15,0" />
+        <Button Content="Вперед" HorizontalAlignment="Left" Margin="85,22,0,0" VerticalAlignment="Top" Height="46" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_4">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Домой" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Height="46" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_3">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Свернуть" HorizontalAlignment="Left" Margin="640,22,0,0" VerticalAlignment="Top" Height="46" Width="60" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_5">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

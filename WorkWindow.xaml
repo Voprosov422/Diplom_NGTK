@@ -1,0 +1,151 @@
+﻿<Window x:Class="PredDeplomohka.WorkWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PredDeplomohka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Background="#FFFFDEA6">
+        <ListBox Name="SourceListBox" Width="354" Height="139" HorizontalAlignment="Left" VerticalAlignment="Top" AllowDrop="True"
+                 PreviewMouseLeftButtonDown="SourceListBox_PreviewMouseLeftButtonDown" Drop="SourceListBox_Drop" Margin="436,301,0,0"/>
+        <ListBox Name="TargetListBox" Width="359" Height="263" HorizontalAlignment="Right" VerticalAlignment="Top" AllowDrop="True"
+                 DragEnter="TargetListBox_DragEnter" Drop="TargetListBox_Drop"/>
+        <Image Margin="23,-121,-396,-729" Source="C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\Fon.png" Stretch="Fill"/>
+        <Image Margin="345,431,-279,-735" Source="C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\wpid-Photo-Jan-24-2013-1128-AM.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.225"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Margin="401,-737,-335,433" Source="C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\wpid-Photo-Jan-24-2013-1128-AM.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-270.356"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Border Background="#FFFFFFD3" CornerRadius="2" BorderBrush="Gray" BorderThickness="1" Margin="0,0,364,0">
+            <Image x:Name="Blaknot" Margin="0,-1,0,-1" Source= "C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\Bloknot.png" Stretch="Fill" HorizontalAlignment="Center" Width="436"/>
+        </Border>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="-23,18,0,0" VerticalAlignment="Top" Height="36" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_1">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="28,18,0,0" VerticalAlignment="Top" Height="36" Width="54" Background="#FFFFFFC8" FontFamily="Bahnschrift" BorderBrush="Black" Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Загружанные файлы" HorizontalAlignment="Left" Height="36" Margin="276,18,0,0" VerticalAlignment="Top" Width="123" Click="Button_Click_4" Background="#FFFFFFC8" BorderBrush="Black" FontFamily="Bahnschrift" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                CornerRadius="5"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                    VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Обновить" HorizontalAlignment="Left" Height="36" Margin="79,18,0,0" VerticalAlignment="Top" Width="61" Background="#FFFFFFC8" BorderBrush="Black" FontFamily="Bahnschrift" Click="Button_Click_5" RenderTransformOrigin="0.365,0.46" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+        CornerRadius="5"
+        BorderThickness="{TemplateBinding BorderThickness}"
+        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <DataGrid x:Name="Furry" RowHeight="15" BorderBrush="Transparent" GridLinesVisibility="None" AlternatingRowBackground="Transparent" RowBackground="Transparent" Background="Transparent" HorizontalAlignment="Left" Height="394" Margin="41,46,0,0" VerticalAlignment="Top" Width="384" d:ItemsSource="{d:SampleData ItemCount=5}"  Foreground="Black" FontFamily="Comic Sans MS" SelectionChanged="DataGrid_SelectionChanged" OpacityMask="#FFFFFFC8" RenderTransformOrigin="0.5,0.5" HeadersVisibility="None">
+            <DataGrid.Resources>
+                <Style TargetType="ScrollBar">
+                    <Setter Property="Foreground" Value="#FFFFC8" />
+                    <Setter Property="Background" Value="#FFFFC8" />
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <Image Margin="791,-116,-725,-188" Source="C:\Users\1992u\OneDrive\Рабочий стол\PeredDeplomohka\PredDeplomohka\Photo\wpid-Photo-Jan-24-2013-1128-AM.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-180.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Button" HorizontalAlignment="Left" Height="28" Margin="571,268,0,0" VerticalAlignment="Top" Width="85" Opacity="0" Cursor="Hand" Click="Button_Click_6"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Height="36" Margin="137,18,0,0" VerticalAlignment="Top" Width="62" Background="#FFFFFFC8" BorderBrush="Black" FontFamily="Bahnschrift" Click="Button_Click_8" RenderTransformOrigin="0.365,0.46" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Почта" HorizontalAlignment="Left" Height="36" Margin="196,18,0,0" VerticalAlignment="Top" Width="62" Background="#FFFFFFC8" BorderBrush="Black" FontFamily="Bahnschrift" Click="Button_Click" RenderTransformOrigin="0.365,0.46" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                CornerRadius="5"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                    VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="!" HorizontalAlignment="Left" Height="36" Margin="256,18,0,0" VerticalAlignment="Top" Width="22" Background="#FFFFFFC8" BorderBrush="Black" FontFamily="Bahnschrift" Click="Button_Click_9" RenderTransformOrigin="0.365,0.46" Cursor="Hand">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}" Margin="32,-6,-27,23" Cursor="Hand">
+                        <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center" OpacityMask="White" Cursor="Hand"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
